@@ -24,13 +24,13 @@ services:
         max_replicas_per_node: 1
       update_config:
         parallelism: 1
-        delay: 10s
+        delay: 55s
       restart_policy:
         condition: on-failure
       resources:
         limits:
           cpus: '1'
-          memory: 500M
+          memory: 200M
         reservations:
           cpus: '0.5'
           memory: 200M
