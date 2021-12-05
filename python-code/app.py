@@ -14,7 +14,7 @@ from models import Client
 #Index
 @app.route("/")
 def index():
-    return "This is the app index"
+    return "Este es el index de la aplicacion"
 
 #Add client and money
 @app.route("/add")

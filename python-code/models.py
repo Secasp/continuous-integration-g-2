@@ -5,7 +5,7 @@ class Client(db.Model):
 
     #Fields
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(255),unique=True)
+    name = db.Column(db.String(10),unique=False)
     money = db.Column(db.Integer)
 
     #Initialize database
