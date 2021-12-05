@@ -24,7 +24,7 @@ services:
         max_replicas_per_node: 1
       update_config:
         parallelism: 1
-        delay: 55s
+        delay: 25s
       restart_policy:
         condition: on-failure
       resources:
