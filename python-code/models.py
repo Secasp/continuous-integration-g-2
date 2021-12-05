@@ -24,7 +24,7 @@ class Client(db.Model):
             'money': self.money
         }
 
-    def display(self):
+    def displayMsg(self):
         return{
             print('')
         }
