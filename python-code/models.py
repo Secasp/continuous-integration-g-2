@@ -23,3 +23,7 @@ class Client(db.Model):
             'name': self.name,
             'money': self.money
         }
+    def msg(self):
+        return{
+            print('')
+        }
