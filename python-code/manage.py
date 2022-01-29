@@ -14,7 +14,7 @@ if __name__ == '__main__':
     manager.run()
 
 
-#Follow these commands to migrate your database
+#Follow these commands to migrate your database and data
 #python3 manage.py db init
 #python3  manage.py db migrate
 #python3 manage.py db upgrade
