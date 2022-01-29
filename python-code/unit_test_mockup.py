@@ -1,8 +1,6 @@
-from unittest import TestCase
+def func(x):
+    return x + 1
 
-class TryTesting(TestCase):
-    def test_always_passes(self):
-        self.assertTrue(True)
 
-    def test_always_fails(self):
-        self.assertTrue(False)
+def test_answer():
+    assert func(3) == 5
