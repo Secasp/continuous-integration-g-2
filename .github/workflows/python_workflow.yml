@@ -4,8 +4,6 @@ on:
   pull_request:
     branches:
     - master
-    paths:
-    - python-code/*
 
 jobs:
   build:
@@ -23,7 +21,6 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          cd python-code
           python -m pip install --upgrade pip
           pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
@@ -35,5 +32,4 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
-          cd python-code
           pytest
