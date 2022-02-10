@@ -6,7 +6,7 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     #Database URL
-    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://"+os.getenv('USER')+":"+os.getenv('PASSWORD')+"@"+os.getenv('DB_HOST')+"/"+os.getenv('DB_NAME')+"?auth_plugin=mysql_native_password"
+    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://user:password@host/db?auth_plugin=mysql_native_password"
 
 class DevelopmentConfig(Config):
     DEVELOPMENT = True
