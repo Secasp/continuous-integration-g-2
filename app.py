@@ -14,7 +14,7 @@ from models import Client
 #Index
 @app.route("/")
 def index():
-    return "This is the app index"
+    return "Continuos delivery group 2 "+os.getenv("ENVIRONMENT")+" environment"
 
 #Add client and money
 @app.route("/add")
